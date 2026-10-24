@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080f20">
+  <meta name="description" content="Veyro — your CarPlay entertainment experience. Discover IPTV playback, playlists and more.">
+  <title>Veyro — Your CarPlay Entertainment Experience</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at 50% 0%, #142e50, #080f20 65%);
+      color: #f3f7ff;
+    }
+    header, main, footer {
+      width: min(100% - 40px, 980px);
+      margin: auto;
+    }
+    header {
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    .brand span { color: #42c8ff; }
+    nav { display: flex; flex-wrap: wrap; gap: 20px; }
+    a { color: #9bdcff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main { padding: 90px 0 110px; }
+    .eyebrow {
+      color: #65d5ff;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    h1 {
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: 1.06;
+      letter-spacing: -3px;
+      margin: 20px 0;
+      max-width: 850px;
+    }
+    h1 em { color: #55c9ff; font-style: normal; }
+    .intro {
+      color: #b6c5d8;
+      line-height: 1.8;
+      font-size: 18px;
+      max-width: 650px;
+    }
+    .features {
+      margin-top: 55px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .feature {
+      padding: 26px;
+      border: 1px solid #29405b;
+      background: #111e32;
+      border-radius: 18px;
+    }
+    .feature h2 { margin: 0 0 12px; font-size: 19px; }
+    .feature p { color: #a9bcd0; line-height: 1.6; margin: 0; }
+    .notice {
+      margin-top: 45px;
+      color: #9eb1c8;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    footer {
+      border-top: 1px solid #25374e;
+      padding: 28px 0 45px;
+      color: #91a5be;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      header { align-items: flex-start; flex-direction: column; }
+      main { padding: 55px 0 75px; }
+      h1 { letter-spacing: -1.5px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">V<span>eyro</span></div>
+    <nav aria-label="Site navigation">
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="eyebrow">Entertainment, reimagined</div>
+    <h1>Your CarPlay <em>entertainment experience.</em></h1>
+    <p class="intro">
+      Meet Veyro, a modern IPTV and video player built for
+      a simpler entertainment experience on iPhone.
+      Enjoy your compatible playlists, explore content
+      and keep your favorites close.
+    </p>
+
+    <section class="features" aria-label="Features">
+      <article class="feature">
+        <h2>Live TV & IPTV</h2>
+        <p>Connect compatible M3U playlists and supported IPTV providers.</p>
+      </article>
+      <article class="feature">
+        <h2>Movies & Series</h2>
+        <p>Explore the content available through your configured provider.</p>
+      </article>
+      <article class="feature">
+        <h2>Made for Your Experience</h2>
+        <p>Organize favorites and enjoy a streamlined interface.</p>
+      </article>
+    </section>
+
+    <p class="notice">
+      Veyro does not provide IPTV subscriptions, channels,
+      playlists or media content. Users must supply their own
+      authorized sources. CarPlay capabilities vary by app
+      version, vehicle and platform support. Video features,
+      where available, are for parked use only.
+    </p>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Veyro. All rights reserved.</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="support.html">Support</a> &nbsp;·&nbsp;
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </footer>
+</body>
+</html>
